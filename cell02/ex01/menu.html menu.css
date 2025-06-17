@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SNCF Sandwich Menu</title>
+  <style>
+    body { background: #f8f0e3; font-family: sans-serif; }
+    .menu { background: #fff8e1; border-radius: 14px; box-shadow: 0 2px 12px #a8003c22; width: 320px; margin: 60px auto; padding: 24px; }
+    h1 { text-align: center; color: #a8003c; }
+    label { color: #a8003c; font-weight: bold; }
+    select { width: 100%; margin-bottom: 14px; padding: 8px; border-radius: 6px; border: 1px solid #a8003c; }
+    .sandwich { margin: 18px auto 10px; width: 120px; }
+    .bread, .ham, .cheese, .lettuce { height: 12px; border-radius: 8px; margin-bottom: 2px; }
+    .bread.top { background: #ffe0a3; }
+    .ham { background: #e86c7a; }
+    .cheese { background: #ffe97a; }
+    .lettuce { background: #b6e388; }
+    .bread.bottom { background: #e2b76b; }
+    .note { text-align: center; color: #a8003c; font-style: italic; font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h1>SNCF Sandwich</h1>
+    <div class="sandwich">
+      <div class="bread top"></div>
+      <div class="ham"></div>
+      <div class="cheese"></div>
+      <div class="lettuce"></div>
+      <div class="bread bottom"></div>
+    </div>
+    <form>
+      <label>Bread: <select><option>Baguette</option><option>Whole Wheat</option></select></label>
+      <label>Ham: <select><option>Jambon</option><option>Turkey</option></select></label>
+      <label>Cheese: <select><option>Emmental</option><option>Comté</option></select></label>
+      <label>Extra: <select><option>Lettuce</option><option>Tomato</option></select></label>
+    </form>
+    <div class="note">Bon appétit! (No JS)</div>
+  </div>
