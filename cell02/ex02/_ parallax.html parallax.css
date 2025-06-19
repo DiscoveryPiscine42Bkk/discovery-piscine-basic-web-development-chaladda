@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Demo</title>
+  <style>
+    body { margin:0; font-family:sans-serif; }
+    .pbg, .pbg2 {
+      min-height: 70vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .pbg { background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80'); }
+    .pbg2 { background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80'); }
+    .msg { background:rgba(0,0,0,0.5); color:#fff; padding:24px 36px; border-radius:12px; font-size:2em; text-align:center; }
+    .blk { background:#111; min-height:40vh; display:flex; align-items:center; justify-content:center; }
+    .blkmsg { color:#fff; font-size:1.5em; text-align:center; }
+    .endmsg { background:rgba(255,255,255,0.8); color:#222; padding:18px 28px; border-radius:10px; font-size:1.2em; }
+  </style>
+</head>
+<body>
+  <div class="pbg"><div class="msg">Welcome to Parallax!</div></div>
+  <div class="blk"><div class="blkmsg">This is a black block.<br>Scroll down!</div></div>
+  <div class="pbg2"><div class="endmsg">Bottom reached 🎉</div></div>
+</body>
+</html>
