@@ -7,7 +7,7 @@ body {
 }
 
 /* Pattern background */
-.background-pattern {
+background-pattern {
     position: absolute;
     top: 0;
     left: 0;
